@@ -17,3 +17,13 @@ export const singleProducts = (id) => {
     return axios.get(`/product/${id}`)
         .then((res) => res.data)
 }
+
+export const editProduct = (id) => {
+    return axios.patch(`/product/${id}/edit`)
+    .then((res) => res.data)
+}
+
+export const deleteProduct = (id) => {
+    return axios.delete(`/product/${id}`)
+    .then((res) => res.data)
+}

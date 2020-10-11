@@ -18,7 +18,7 @@ export default function Login({user, onLogIn}) {
     }
 
     if (user) {
-        return <Redirect to='/products' />
+        return <Redirect to='/product' />
     }
 
     return (
